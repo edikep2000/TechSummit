@@ -1,0 +1,31 @@
+﻿
+		<div id="left">
+		
+         
+                <div class="subnav">
+                    <div class="subnav-title">
+                        <a href="#" class='toggle-subnav'><i class="icon-angle-down"></i><span>Registration Stats</span></a>
+                    </div>
+                    <ul class="subnav-menu">
+                        <li>
+                            <a href="@Url.Action("Registrants","Admin")"><i class="icon-lock"></i>&nbsp;All Registrants</a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Countries", "Admin")"><i class="icon-user-md"></i>&nbsp;Countries</a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Index", "Admin")"><i class="icon-windows"></i>&nbsp;Registrant Stats</a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("NewCountry", "Admin")"><i class="icon-flag"></i>&nbsp;New Country</a>
+                        </li>
+                        @if (!User.IsInRole("User"))
+                        {
+                        <li>
+                            <a href="@Url.Action("Users", "Admin")"><i class="icon-time"></i>&nbsp;New Admin</a>
+                        </li>
+                        }
+                    </ul>
+                </div>
+         
+		</div>

@@ -1,0 +1,29 @@
+
+@using TwitterBootstrapMVC
+@if (ViewData.ModelState.Any(x => x.Value.Errors.Any())) 
+{ 
+    using (@Html.Bootstrap().Begin(new Alert().Closeable().IsLongMessage().Style(AlertColor.Error)))
+    {
+       
+        <ul class="unstyled">
+      @Html.ValidationSummary(false)
+            </ul>
+           
+    }
+}
+else if (!String.IsNullOrEmpty((String)ViewBag.Message))
+{
+     using (@Html.Bootstrap().Begin(new Alert().Closeable().IsLongMessage().Style(AlertColor.Success)))
+    {
+        
+      <p>@ViewBag.Message</p>
+    }
+}
+else if (!String.IsNullOrEmpty((string) TempData["message"]))
+{
+     using (@Html.Bootstrap().Begin(new Alert().Closeable().IsLongMessage().Style(AlertColor.Info)))
+     {
+         object o = TempData["message"];
+         <p>@o.ToString()</p>
+     }
+}

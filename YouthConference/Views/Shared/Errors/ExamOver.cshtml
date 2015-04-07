@@ -1,0 +1,16 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+@using TwitterBootstrapMVC
+
+@{
+    ViewBag.Title = "Error";
+    Layout = "~/Views/Shared/_errorLayout.cshtml";
+}
+
+<div class="code"><span>500</span><i class="icon-warning-sign"></i></div>
+		<div class="desc">Oops! Sorry, But the Time Alloted for Exam has elapsed.</div>
+<div class="buttons">
+    <div class="pull-left">
+        
+        @Html.Bootstrap().ActionLinkButton("Home", "Index", "Home").IconAppend(Icons.home).Style(ButtonStyle.Default)
+    </div>
+</div>

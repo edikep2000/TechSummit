@@ -1,0 +1,16 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+@using TwitterBootstrapMVC
+
+@{
+    ViewBag.Title = "Error";
+    Layout = "~/Views/Shared/_errorLayout.cshtml";
+}
+
+<div class="code"><span>404</span><i class="icon-warning-sign"></i></div>
+		<div class="desc">Oops! We could not validate your license. Did you tamper with it.</div>
+<div class="buttons">
+    <div class="pull-left">
+        @Html.ActionLink("Index", "Home", new{@class="btn"})
+        <a href="index.html" class="btn"><i class="icon-arrow-left"></i> Back</a>
+    </div>
+</div>

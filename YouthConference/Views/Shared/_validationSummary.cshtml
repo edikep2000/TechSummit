@@ -1,0 +1,29 @@
+
+@using TwitterBootstrapMVC
+@if (ViewData.ModelState.Any(x => x.Value.Errors.Any())) 
+{ 
+   
+       <div class="error">
+        <ul class="unstyled">
+      @Html.ValidationSummary(false)
+            </ul>
+           
+   </div>
+}
+else if (!String.IsNullOrEmpty((String)ViewBag.Message))
+{
+    <div class="success">
+        
+      <p>@ViewBag.Message</p>
+  </div>
+}
+else if (!String.IsNullOrEmpty((string) TempData["message"]))
+{
+    <div class="info">
+        @{
+             object o = TempData["message"];
+        }
+       
+        <p>@o.ToString()</p>
+    </div>
+}

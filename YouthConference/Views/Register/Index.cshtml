@@ -1,0 +1,57 @@
+﻿@model YouthConference.Models.ViewModels.RegistrantViewModel
+@{
+    Layout = "~/Views/Shared/_template.cshtml";
+}  
+        
+<div class="row-fluid">
+    <div class="span8 visible-phone  visible-tablet visible-desktop visible-480 text-center">
+    </div>
+
+<div class="span4">
+     <div id="wrapper">
+               <div id="login" class="form">
+                   @using (Html.BeginForm("Index", "Register", FormMethod.Post, new {autocomplete = "on"}))
+                   {
+                       <h2>Sign Up</h2>
+                       @Html.Partial("_validationSummary")
+                       <p>
+                           @Html.LabelFor(m => m.FullName)
+                           @Html.TextBoxFor(M => M.FullName, new{placeholder="Full Name"})
+                       </p>
+                       <p> 
+                           @Html.LabelFor(m => m.EmailAddress)
+                           @Html.TextBoxFor(m => m.EmailAddress, new{placeholder="Email Address"})
+                       </p>
+
+                       <p> 
+                           @Html.LabelFor(m => m.PhoneNumber)
+                           @Html.TextBoxFor(m => m.PhoneNumber, new{placeholder="Phone Number"})
+                       </p>
+                    
+                      
+                       <p> 
+                           @Html.LabelFor(m => m.Gender)
+                           @Html.DropDownListFor(m => m.Gender, ViewBag.Gender as IEnumerable<SelectListItem>)
+                       </p>
+                    
+                       <p> 
+                           @Html.LabelFor(m => m.Institution)
+                           @Html.TextBoxFor(m => m.Institution, new{placeholder = "Institution Of Study"})
+                       </p>
+                    
+                       <p> 
+                           @Html.LabelFor(m => m.State)
+                           @Html.DropDownListFor(m => m.State, ViewBag.State as IEnumerable<SelectListItem>) 
+                       </p>
+                                    
+                       <p class="signin button"> 
+                           <input type="submit" value="Sign up"/> 
+                       </p>
+                   } 
+               </div>
+           </div>
+</div>
+
+   
+         
+</div>

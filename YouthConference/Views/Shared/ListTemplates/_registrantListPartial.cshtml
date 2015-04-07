@@ -1,0 +1,28 @@
+﻿@model System.Collections.Generic.IEnumerable<YouthConference.Models.ViewModels.RegistrantViewModel>
+
+
+<table class="table table-condensed table-striped">
+    <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Email Address</th>
+            <th>Phone Number</th>
+            <th>Gender</th>
+            <th>State</th>
+            <th>Institution</th>
+        </tr>
+    </thead>
+    <tbody>
+       @foreach (var i in Model)
+       {
+           <tr>
+               <td>@i.FullName</td>
+               <td>@i.EmailAddress</td>
+               <td>@i.PhoneNumber</td>
+               <td>@i.Gender</td>
+               <td>@i.State</td>
+               <td>@i.Institution</td>
+           </tr>
+       }
+    </tbody>
+</table>

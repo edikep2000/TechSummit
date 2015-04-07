@@ -1,0 +1,14 @@
+﻿@using TwitterBootstrapMVC
+
+@{
+    ViewBag.Title = "Error";
+    Layout = "~/Views/Shared/_errorLayout.cshtml";
+}
+
+<div class="code"><span>500</span><i class="icon-warning-sign"></i></div>
+<div class="desc"><strong>Oops!</strong> Sorry, request validation failed. Refresh page to continue.</div>
+<div class="buttons">
+    <div class="pull-left">
+        @Html.Bootstrap().ActionLinkButton("Home", "Index", "Home").IconAppend(Icons.home).Style(ButtonStyle.Default)
+    </div>
+</div>

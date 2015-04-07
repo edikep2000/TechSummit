@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DomainModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="2.0.0.0" name="YouthConferenceModels" namespace="YouthConference.Models" showPropertiesCompartment="true" xmlns="http://www.telerik.com/ORM">
+  <orm:orm name="YouthConferenceModels" backend="mssql" xmlns:orm="http://tempuri.org/ORM">
+    <orm:namespace name="YouthConference.Models" default="true">
+      <orm:class name="UserProfile" use-default-mapping="true" uniqueId="aa9b1290-8677-4212-8feb-5fd05b81835f">
+        <orm:identity>
+          <orm:single-field field-name="_userId" />
+        </orm:identity>
+        <orm:field name="_userId" property="UserId" uniqueId="53dfe3f1-d085-42b4-be66-6d515250aac1" type="System.Int32">
+          <orm:column name="UserId" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" converter="OpenAccessRuntime.Data.IntConverter" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_userName" property="UserName" uniqueId="b7e44be0-48e0-4cd9-ba8a-55a39701ea31" type="System.String">
+          <orm:column name="UserName" sql-type="varchar" nullable="true" length="255" scale="0" converter="OpenAccessRuntime.Data.VariableLengthAnsiStringConverter" ado-type="StringVariableLength" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="Registrant" update-schema="true" use-default-mapping="true" use-cascade-delete="no" uniqueId="6d9bcdfa-0ecf-4029-b7aa-ebfb6e2847eb">
+        <orm:identity>
+          <orm:key-generator name="autoinc">
+            <orm:key-generator-member property-name="Id" />
+          </orm:key-generator>
+          <orm:single-field field-name="_id" />
+        </orm:identity>
+        <orm:field name="_id" property="Id" uniqueId="24be948b-deba-47b5-8235-25b6139868c0" type="System.Int32">
+          <orm:column name="Id" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" converter="OpenAccessRuntime.Data.IntConverter" backend-calculated="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_firstName" property="FirstName" uniqueId="95b09c2e-8350-4630-b401-d5a919ac29d6" type="System.String" default-fetch-group="true">
+          <orm:column name="FirstName" sql-type="varchar" nullable="true" length="255" scale="0" converter="OpenAccessRuntime.Data.VariableLengthAnsiStringConverter" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_middleName" property="MiddleName" uniqueId="24658e70-ad06-4485-bc24-a5bab65a4d05" type="System.String">
+          <orm:column name="MiddleName" sql-type="varchar" nullable="true" length="255" scale="0" converter="OpenAccessRuntime.Data.VariableLengthAnsiStringConverter" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_lastName" property="LastName" uniqueId="84fccf5a-60bf-4863-bb79-aa277d9dc26a" type="System.String">
+          <orm:column name="LastName" sql-type="varchar" nullable="true" length="255" scale="0" converter="OpenAccessRuntime.Data.VariableLengthAnsiStringConverter" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_state" property="State" uniqueId="544ece42-6b8f-4395-a3d8-83b00a73a8af" type="System.String">
+          <orm:column name="stte" sql-type="varchar" nullable="true" length="255" scale="0" converter="OpenAccessRuntime.Data.VariableLengthAnsiStringConverter" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_email" property="Email" uniqueId="65dcb41e-d77a-457d-9af2-573efba644fa" type="System.String">
+          <orm:column name="Email" sql-type="varchar" nullable="true" length="255" scale="0" converter="OpenAccessRuntime.Data.VariableLengthAnsiStringConverter" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_phoneNumber" property="PhoneNumber" uniqueId="32a72d7b-a270-4859-bc9b-48089a681ac8" type="System.String">
+          <orm:column name="PhoneNumber" sql-type="varchar" nullable="true" length="255" scale="0" converter="OpenAccessRuntime.Data.VariableLengthAnsiStringConverter" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_gender" property="Gender" uniqueId="6d733dab-5725-4865-aecc-90a0c700af39" type="System.String">
+          <orm:column name="Gender" sql-type="varchar" nullable="true" length="255" scale="0" converter="OpenAccessRuntime.Data.VariableLengthAnsiStringConverter" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_institution" property="Institution" uniqueId="e5e1df53-5a97-4798-ad4d-714f7c046f60" type="System.String">
+          <orm:column name="Institution" sql-type="varchar" nullable="true" length="255" scale="0" converter="OpenAccessRuntime.Data.VariableLengthAnsiStringConverter" ado-type="StringVariableLength" />
+        </orm:field>
+      </orm:class>
+    </orm:namespace>
+    <orm:schema schema="">
+      <orm:table name="Registrant">
+        <orm:column name="Id" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" converter="OpenAccessRuntime.Data.IntConverter" backend-calculated="true" ado-type="Int32" />
+        <orm:column name="FirstName" sql-type="varchar" nullable="false" length="255" scale="0" converter="OpenAccessRuntime.Data.VariableLengthStringConverter" ado-type="Varchar" />
+        <orm:column name="MiddleName" sql-type="varchar" nullable="false" length="255" scale="0" converter="OpenAccessRuntime.Data.VariableLengthStringConverter" ado-type="Varchar" />
+        <orm:column name="LastName" sql-type="varchar" nullable="false" length="255" scale="0" converter="OpenAccessRuntime.Data.VariableLengthStringConverter" ado-type="Varchar" />
+        <orm:column name="stte" sql-type="varchar" nullable="false" length="255" scale="0" converter="OpenAccessRuntime.Data.VariableLengthStringConverter" ado-type="Varchar" />
+        <orm:column name="Email" sql-type="varchar" nullable="false" length="255" scale="0" converter="OpenAccessRuntime.Data.VariableLengthStringConverter" ado-type="Varchar" />
+        <orm:column name="PhoneNumber" sql-type="varchar" nullable="false" length="255" scale="0" converter="OpenAccessRuntime.Data.VariableLengthStringConverter" ado-type="Varchar" />
+        <orm:column name="Gender" sql-type="varchar" nullable="false" length="255" scale="0" converter="OpenAccessRuntime.Data.VariableLengthStringConverter" ado-type="Varchar" />
+      </orm:table>
+    </orm:schema>
+    <orm:relational-naming-settings>
+      <orm:remove-leading-underscore>False</orm:remove-leading-underscore>
+      <orm:source-strategy>Property</orm:source-strategy>
+      <orm:remove-camel-case>False</orm:remove-camel-case>
+    </orm:relational-naming-settings>
+  </orm:orm>
+  <ModelSettings xmlns="">
+    <AppConfigConnectionPropertyName>DefaultConnection</AppConfigConnectionPropertyName>
+    <AppConfigConnectionString>data source=PETER;initial catalog=techsummit;integrated security=True</AppConfigConnectionString>
+    <NamingSettings>
+      <ClassRules>
+        <CaseMode>PascalCase</CaseMode>
+        <PluralizationMode>Singularize</PluralizationMode>
+      </ClassRules>
+      <FieldRules>
+        <AddPrefix>_</AddPrefix>
+        <CaseMode>CamelCase</CaseMode>
+      </FieldRules>
+      <PropertyRules>
+        <CaseMode>PascalCase</CaseMode>
+      </PropertyRules>
+      <NavigationPropertyRules />
+    </NamingSettings>
+    <CodeGenerationSettings>
+      <MappingDefinitionType>Fluent</MappingDefinitionType>
+    </CodeGenerationSettings>
+    <SchemaUpdateSettings>
+      <ExecuteScript>true</ExecuteScript>
+      <DeploymentProject>YouthConference.Models</DeploymentProject>
+      <UpdateDatabaseOperation>Migrate</UpdateDatabaseOperation>
+    </SchemaUpdateSettings>
+    <BackendConfigurationSettings>
+      <BackendConfiguration>
+        <Backend>mssql</Backend>
+        <ProviderName>System.Data.SqlClient</ProviderName>
+        <Runtime>
+          <CacheReferencesType>Weak</CacheReferencesType>
+          <ClassBehavior>ReadWrite</ClassBehavior>
+          <CompiledQueryCache>2000</CompiledQueryCache>
+          <NullOnRowNotFound>True</NullOnRowNotFound>
+        </Runtime>
+        <ConnectionPool>
+          <MaxActiveConnections>50</MaxActiveConnections>
+          <Pool>ADOManaged</Pool>
+        </ConnectionPool>
+        <Logging>
+          <MetricStoreSnapshotInterval>0</MetricStoreSnapshotInterval>
+        </Logging>
+        <SecondLevelCache>
+          <Enabled>True</Enabled>
+          <CacheQueryResults>True</CacheQueryResults>
+          <MaxQueriesInCache>20000</MaxQueriesInCache>
+        </SecondLevelCache>
+      </BackendConfiguration>
+    </BackendConfigurationSettings>
+  </ModelSettings>
+  <Types>
+    <DomainClass Id="aa9b1290-8677-4212-8feb-5fd05b81835f" name="UserProfile" namespace="YouthConference.Models" showPropertiesCompartment="true" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="53dfe3f1-d085-42b4-be66-6d515250aac1" name="UserId" type="System.Int32" label="UserId : System.Int32" identity="true" fieldName="_userId" />
+      <Property Id="b7e44be0-48e0-4cd9-ba8a-55a39701ea31" name="UserName" label="UserName : String" fieldName="_userName" />
+    </DomainClass>
+    <DomainClass Id="6d9bcdfa-0ecf-4029-b7aa-ebfb6e2847eb" name="Registrant" namespace="YouthConference.Models" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" updateSchema="true" showNavigationCompartment="true" showImplementationCompartment="true" useCascadeDelete="No" identityMechanismMember="Id">
+      <Property Id="24be948b-deba-47b5-8235-25b6139868c0" name="Id" type="System.Int32" label="Id : System.Int32" identity="true" fieldName="_id" />
+      <Property Id="95b09c2e-8350-4630-b401-d5a919ac29d6" name="FirstName" label="FirstName : String" loadBehavior="Eager" fieldName="_firstName" />
+      <Property Id="24658e70-ad06-4485-bc24-a5bab65a4d05" name="MiddleName" label="MiddleName : String" fieldName="_middleName" />
+      <Property Id="84fccf5a-60bf-4863-bb79-aa277d9dc26a" name="LastName" label="LastName : String" fieldName="_lastName" />
+      <Property Id="544ece42-6b8f-4395-a3d8-83b00a73a8af" name="State" label="State : String" fieldName="_state" />
+      <Property Id="65dcb41e-d77a-457d-9af2-573efba644fa" name="Email" label="Email : String" fieldName="_email" />
+      <Property Id="32a72d7b-a270-4859-bc9b-48089a681ac8" name="PhoneNumber" label="PhoneNumber : String" nullable="true" fieldName="_phoneNumber" />
+      <Property Id="6d733dab-5725-4865-aecc-90a0c700af39" name="Gender" label="Gender : String" fieldName="_gender" />
+      <Property Id="e5e1df53-5a97-4798-ad4d-714f7c046f60" name="Institution" label="Institution : String" fieldName="_institution" />
+    </DomainClass>
+  </Types>
+  <domainContext>
+    <domainModelHasDomainContext Id="76ab8de5-9308-4fbd-939f-5749a2853f1f">
+      <domainContainer name="YouthConferenceModels" namespace="YouthConference.Models" showPropertiesCompartment="true">
+        <entitySetProperty name="UserProfiles" namespace="YouthConference.Models" type="UserProfile" label="UserProfiles : IQueryable&lt;YouthConference.Models.UserProfile&gt;" />
+        <entitySetProperty name="Registrants" namespace="YouthConference.Models" type="Registrant" label="Registrants : IQueryable&lt;YouthConference.Models.Registrant&gt;" />
+      </domainContainer>
+    </domainModelHasDomainContext>
+  </domainContext>
+</DomainModel>

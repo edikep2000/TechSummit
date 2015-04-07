@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_ConvertModelWizard_Files\UpgradeReferences.xslt"?>
+<UpgradeLog>
+  <Events>
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\YouthConference.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\YouthConference.csproj" Message="Project References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\YouthConference.csproj" Message="Import Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\packages.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\packages.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\packages.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\packages.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\packages.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\packages.config" Message="packages.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\Views\Web.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\Views\Web.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\Views\Web.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\Views\Web.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\Views\Web.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\Views\Web.config" Message="Web.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\Web.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\Web.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\Web.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\Web.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\Web.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\Web.config" Message="Web.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\Web.Debug.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\Web.Debug.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\Web.Debug.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\Web.Debug.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\Web.Debug.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\Web.Debug.config" Message="Web.Debug.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\Web.Release.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\Web.Release.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\Web.Release.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\Web.Release.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\Web.Release.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\Web.Release.config" Message="Web.Release.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\YouthConference.csproj" Message="YouthConference" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference.Models\YouthConference.Models.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference.Models\YouthConference.Models.csproj" Message="Project References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference.Models\YouthConference.Models.csproj" Message="Import Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference.Models\App.Config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference.Models\App.Config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference.Models\App.Config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference.Models\App.Config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference.Models\App.Config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference.Models\App.Config" Message="App.Config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference.Models\YouthConference.Models.csproj" Message="YouthConference.Models" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference.DataAccess\YouthConference.DataAccess.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference.DataAccess\YouthConference.DataAccess.csproj" Message="Project References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference.DataAccess\YouthConference.DataAccess.csproj" Message="Import Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference.DataAccess\YouthConference.DataAccess.csproj" Message="YouthConference.DataAccess" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference.Common\YouthConference.Common.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference.Common\YouthConference.Common.csproj" Message="Project References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference.Common\YouthConference.Common.csproj" Message="Import Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference.Common\YouthConference.Common.csproj" Message="YouthConference.Common" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference.sln" Message="YouthConference" />
+    <Event EventType="Success" Action="Upgrade" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\YouthConference.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Upgrade" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference\YouthConference.csproj" Message="YouthConference" />
+    <Event EventType="Success" Action="Upgrade" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference.Models\YouthConference.Models.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Upgrade" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference.Models\YouthConference.Models.csproj" Message="YouthConference.Models" />
+    <Event EventType="Success" Action="Upgrade" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference.DataAccess\YouthConference.DataAccess.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Upgrade" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference.DataAccess\YouthConference.DataAccess.csproj" Message="YouthConference.DataAccess" />
+    <Event EventType="Success" Action="Upgrade" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference.Common\YouthConference.Common.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Upgrade" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference.Common\YouthConference.Common.csproj" Message="YouthConference.Common" />
+    <Event EventType="Success" Action="Upgrade" SourceItem="C:\Users\edikep2000\Documents\Visual Studio 2012\Projects\YouthConference\YouthConference.sln" Message="YouthConference" />
+  </Events>
+</UpgradeLog>

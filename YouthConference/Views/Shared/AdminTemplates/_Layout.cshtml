@@ -1,0 +1,64 @@
+﻿@using TwitterBootstrapMVC
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Youth Conference Registration Stats</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link href='http://fonts.googleapis.com/css?family=Lily+Script+One|Molle:400italic|Shadows+Into+Light+Two|Raleway+Dots' rel='stylesheet' type='text/css'>
+        
+        <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!-- Apple devices fullscreen -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<!-- Apple devices fullscreen -->
+	<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        @Styles.Render("~/Content/jqueryui")
+        @Styles.Render("~/Content/bootstrap")
+        @RenderSection("chosencss", required:false)
+        @RenderSection("datepickercss", required:false)
+        @RenderSection("timepickercss", required:false)
+        @RenderSection("icheckcss", required:false)
+        @RenderSection("tagsinputcss", required:false)
+        @RenderSection("select2css", required:false)
+        -        <script src="~/Scripts/jquery.min.js"></script>
+        <script src="~/Scripts/bootstrap.min.js"></script>
+-        @Scripts.Render("~/bundles/modernizr")
+            <link href="http://cdn.kendostatic.com/2012.2.913/styles/kendo.common.min.css" rel="stylesheet" type="text/css" />
+	        <link href="http://cdn.kendostatic.com/2012.2.913/styles/kendo.dataviz.min.css" rel="stylesheet" type="text/css" />
+	        <link href="http://cdn.kendostatic.com/2012.2.913/styles/kendo.default.min.css" rel="stylesheet" type="text/css" />
+	        <script src="http://cdn.kendostatic.com/2012.2.913/js/kendo.all.min.js"></script>
+            <script src="http://cdn.kendostatic.com/2012.2.913/js/kendo.aspnetmvc.min.js"></script>
+</head>
+    <body class="theme-darkblue"  data-layout-sidebar="fixed" data-layout-topbar="fixed">
+        
+        @Html.Partial("AdminTemplates/_navigationPartial")
+        <div class="container-fluid" id="content">
+            @Html.Partial("AdminTemplates/_sideNavigationPartial")
+            <div id="main">
+                <div class="container-fluid">
+                
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+        
+        @*@Html.Partial("_footerPartial")*@
+        
+    </body>
+         @Scripts.Render("~/bundles/application")
+       @Scripts.Render("~/bundles/jqueryval")
+    <script src="~/Scripts/jquery-ui/jquery.ui.core.min.js"></script>
+    <script src="~/Scripts/jquery-ui/jquery.ui.widget.min.js"></script>
+    <script src="~/Scripts/jquery-ui/jquery.ui.mouse.min.js"></script>
+    <script src="~/Scripts/jquery-ui/jquery.ui.draggable.min.js"></script>
+    <script src="~/Scripts/jquery-ui/jquery.ui.resizable.min.js"></script>
+    <script src="~/Scripts/jquery-ui/jquery.ui.sortable.min.js"></script>
+    <script src="~/Scripts/jquery-ui/jquery.ui.draggable.min.js"></script>
+    <script src="~/Scripts/jquery-ui/jquery.ui.droppable.min.js"></script>
+    <script src="~/Scripts/jquery-ui/jquery.ui.position.js"></script> 
+<script src="~/Scripts/nicescroll/jquery.nicescroll.min.js"></script>
+    
+<script src="~/Scripts/slimscroll/jquery.slimscroll.min.js"></script>
+</html>

@@ -1,0 +1,39 @@
+﻿
+<div id="navigation">
+            <div class="container-fluid">
+                @Html.ActionLink("Conference Data Reports", "Index", "Admin", null, new{id="brand"})
+               <a href="#" class="toggle-nav" rel="tooltip" data-placement="bottom" title="Toggle navigation"><i class="icon-reorder"></i></a>
+               
+                    
+                
+                <div class="user">
+                   
+                    <div class="dropdown">
+                        @if (WebSecurity.IsAuthenticated)
+                        {
+                         <a href="#" class='dropdown-toggle' data-toggle="dropdown">Welcome @WebSecurity.CurrentUserName</a>
+                        <ul class="dropdown-menu pull-right">
+                           
+                            <li>
+                                <a href="@Url.Action("LogOff", "Account")"><i class="icon-unlock"></i>&nbsp;&nbsp;&nbsp;Log Off</a>
+
+                            </li>
+                        </ul>
+                        }
+                        else
+                        {
+                             <a href="#" class='dropdown-toggle' data-toggle="dropdown">Welcome Guest</a>
+                             <ul class="dropdown-menu pull-right">
+                           
+                                 <li>
+                                     <a href="@Url.Action("Login", "Account")"><i class="icon-wrench"></i>&nbsp;&nbsp;Login</a>
+                                 </li>
+                                 
+                               
+                             </ul>
+                        }
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
