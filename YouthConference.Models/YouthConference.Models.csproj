@@ -80,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DefaultConnection%282015-04-01 06-36-28%29.rlinq.sql" />
+    <Content Include="DefaultConnection%282015-04-09 06-24-34%29.rlinq.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Condition="Exists('$(MSBuildExtensionsPath)\OpenAccess.targets')" Project="$(MSBuildExtensionsPath)\OpenAccess.targets" />

@@ -96,6 +96,8 @@ namespace YouthConference.Models
 			configuration.HasProperty(x => x.PhoneNumber).HasFieldName("_phoneNumber");
 			configuration.HasProperty(x => x.Gender).HasFieldName("_gender");
 			configuration.HasProperty(x => x.Institution).HasFieldName("_institution");
+			configuration.HasProperty(x => x.CourseOfStudy).HasFieldName("_courseOfStudy");
+			configuration.HasProperty(x => x.Country).HasFieldName("_country");
 		}
 	}
 }

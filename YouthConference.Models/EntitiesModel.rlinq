@@ -47,6 +47,12 @@
         <orm:field name="_institution" property="Institution" uniqueId="e5e1df53-5a97-4798-ad4d-714f7c046f60" type="System.String">
           <orm:column name="Institution" sql-type="varchar" nullable="true" length="255" scale="0" converter="OpenAccessRuntime.Data.VariableLengthAnsiStringConverter" ado-type="StringVariableLength" />
         </orm:field>
+        <orm:field name="_courseOfStudy" property="CourseOfStudy" uniqueId="d517e94d-534f-46fa-ad49-bc3ff3c2dbdc" type="System.String">
+          <orm:column name="CourseOfStudy" sql-type="varchar" nullable="true" length="255" scale="0" converter="OpenAccessRuntime.Data.VariableLengthAnsiStringConverter" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_country" property="Country" uniqueId="e5f8d3eb-4ca9-47a1-ab9f-fcf125f4ec51" type="System.String">
+          <orm:column name="Country" sql-type="varchar" nullable="true" length="255" scale="0" converter="OpenAccessRuntime.Data.VariableLengthAnsiStringConverter" ado-type="StringVariableLength" />
+        </orm:field>
       </orm:class>
     </orm:namespace>
     <orm:schema schema="">
@@ -132,6 +138,8 @@
       <Property Id="32a72d7b-a270-4859-bc9b-48089a681ac8" name="PhoneNumber" label="PhoneNumber : String" nullable="true" fieldName="_phoneNumber" />
       <Property Id="6d733dab-5725-4865-aecc-90a0c700af39" name="Gender" label="Gender : String" fieldName="_gender" />
       <Property Id="e5e1df53-5a97-4798-ad4d-714f7c046f60" name="Institution" label="Institution : String" fieldName="_institution" />
+      <Property Id="d517e94d-534f-46fa-ad49-bc3ff3c2dbdc" name="CourseOfStudy" label="CourseOfStudy : String" nullable="true" fieldName="_courseOfStudy" />
+      <Property Id="e5f8d3eb-4ca9-47a1-ab9f-fcf125f4ec51" name="Country" label="Country : String" fieldName="_country" />
     </DomainClass>
   </Types>
   <domainContext>

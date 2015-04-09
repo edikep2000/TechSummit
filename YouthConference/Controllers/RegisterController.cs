@@ -25,7 +25,7 @@ namespace YouthConference.Controllers
         public ActionResult Index()
         {
             ViewBag.Gender = _genderListProducer.BuildList();
-            ViewBag.State = StateListBuilder.States();
+
             return View();
         }
 
@@ -51,7 +51,7 @@ namespace YouthConference.Controllers
                 {
                   
                     ViewBag.Gender = _genderListProducer.BuildList();
-                    ViewBag.State = StateListBuilder.States();
+
                     ModelState.AddModelError("", "At the very minimum, a first name and a surname are required");
                     return View();
                 }
@@ -59,7 +59,7 @@ namespace YouthConference.Controllers
                 if (_registrantPersistenceService.GetUnique(model.EmailAddress, model.PhoneNumber) != null)
                 {
                     ViewBag.Gender = _genderListProducer.BuildList();
-                    ViewBag.State = StateListBuilder.States();
+
                     ModelState.AddModelError("",
                                              "Seems like you have already registered. We already have that phone number and or Email address");
                     return View(model);
@@ -71,11 +71,10 @@ namespace YouthConference.Controllers
                 registrant.State = model.State;
                 registrant.Institution = model.Institution;
                 _registrantPersistenceService.Insert(registrant);
-                TempData["Message"] = "Thanks for indicating your interest!";
+                TempData["Message"] = "Thanks for indicating interest!";
                 return RedirectToAction("Index");
             }
             ViewBag.Gender = _genderListProducer.BuildList();
-            ViewBag.State = StateListBuilder.States();
             return View(model);
         }
 

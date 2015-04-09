@@ -18,27 +18,37 @@ namespace YouthConference.Models.ViewModels
 
        [EmailAddress]
        [Required]
+       [StringLength(100)]
        [Display(Name = "Email Address")]
        public String EmailAddress { get; set; }
 
        [Required]
+       [StringLength(100)]
        [Display(Name = "Phone Number")]
        public String PhoneNumber { get; set; }
 
        [Required]
+       [StringLength(100)]
        [Display(Name = "Gender")]
        public String Gender { get; set; }
 
        [Required]
+       [StringLength(100)]
        [Display(Name = "State")]
        public String State { get; set; }
 
-       [Required]
+
+       [StringLength(100)]
        [Display(Name = "Institution of Study")]
        public String Institution { get; set; }
 
+         [StringLength(100)]
+       [Display(Name = "Course Of Study (If Applicable)")]
+       public String CourseOfStudy { get; set; }
 
-
+       [Required]
+       [StringLength(100)]
+       public String Country { get; set; }
       
      
     }

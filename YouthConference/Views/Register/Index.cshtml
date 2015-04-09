@@ -1,57 +1,318 @@
 ﻿@model YouthConference.Models.ViewModels.RegistrantViewModel
 @{
-    Layout = "~/Views/Shared/_template.cshtml";
+    Layout = null;
 }  
+ 
+
+<html lang="en">
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="PETER EDIKE">
+    <!--<link rel="icon" href="img/favicon.ico">-->
+
+    <title>Youth Technology Summit</title>
+
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="~/css/animate.min.css" rel="stylesheet" />
+    <link href="~/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="~/css/style.css" rel="stylesheet" />
+</head>
+
+
+    <body id="page-top">
+        <div class="navbar-wrapper">
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header page-scroll">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Youth Technology Summit</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a class="page-scroll" href="#page-top">Home</a></li>
+                            <li><a class="page-scroll" href="#features">About The Summit</a></li>
+                            <li><a class="page-scroll" href="#objectives">Sign Up</a></li>
+                            <li><a class="page-scroll" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
         
-<div class="row-fluid">
-    <div class="span8 visible-phone  visible-tablet visible-desktop visible-480 text-center">
-    </div>
-
-<div class="span4">
-     <div id="wrapper">
-               <div id="login" class="form">
-                   @using (Html.BeginForm("Index", "Register", FormMethod.Post, new {autocomplete = "on"}))
-                   {
-                       <h2>Sign Up</h2>
-                       @Html.Partial("_validationSummary")
-                       <p>
-                           @Html.LabelFor(m => m.FullName)
-                           @Html.TextBoxFor(M => M.FullName, new{placeholder="Full Name"})
-                       </p>
-                       <p> 
-                           @Html.LabelFor(m => m.EmailAddress)
-                           @Html.TextBoxFor(m => m.EmailAddress, new{placeholder="Email Address"})
-                       </p>
-
-                       <p> 
-                           @Html.LabelFor(m => m.PhoneNumber)
-                           @Html.TextBoxFor(m => m.PhoneNumber, new{placeholder="Phone Number"})
-                       </p>
+        <div id="inSlider" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#inSlider" data-slide-to="0" class="active"></li>
+                <li data-target="#inSlider" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="container">
                     
-                      
-                       <p> 
-                           @Html.LabelFor(m => m.Gender)
-                           @Html.DropDownListFor(m => m.Gender, ViewBag.Gender as IEnumerable<SelectListItem>)
-                       </p>
-                    
-                       <p> 
-                           @Html.LabelFor(m => m.Institution)
-                           @Html.TextBoxFor(m => m.Institution, new{placeholder = "Institution Of Study"})
-                       </p>
-                    
-                       <p> 
-                           @Html.LabelFor(m => m.State)
-                           @Html.DropDownListFor(m => m.State, ViewBag.State as IEnumerable<SelectListItem>) 
-                       </p>
-                                    
-                       <p class="signin button"> 
-                           <input type="submit" value="Sign up"/> 
-                       </p>
-                   } 
-               </div>
-           </div>
-</div>
+                    </div>
+                    <!-- Set background for slide in css -->
+                    <div class="header-back one"></div>
 
-   
-         
-</div>
+                </div>
+               
+            </div>
+            @*<a class="left carousel-control" href="#inSlider" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#inSlider" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>*@
+        </div>
+        
+        
+        
+        <section id="features" class="container features">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="navy-line"></div>
+                    <h1>About <br /> <span class="navy"> Youth Technology Summit</span> </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    The Youth technology summit is the first of its kind in Africa, 
+                    It is historic gathering that will serve as a platform where technology 
+                    discerning minds will get together to review, analyze and understand current 
+                    trends in technology, It will not just be an intellectual exercise, It’s a platform 
+                    to map the way forward for the sake of action
+                    <br/>
+                    <br/>
+                    Attending the conference will be those who by interest, gifting, 
+                    training, profession or just plain potential see themselves as 
+                    stakeholders in the world’s technological future
+                    <br/><br />
+                    This year’s summit will address a most basic question, “what does innovation technology innovation entail?”,
+                    and “has Africa been left behind?” Participants will be enlightened on the basics and eccentricities of innovation
+                    <br /><br />
+                    
+                    <div class="col-lg-12 text-center">
+                        <div class="navy-line"></div>
+                        <h1><span class="navy">Summit Objectives </span></h1>
+
+                    </div>
+                    
+                    To inspire the young to look out for needs in their world that simple technology can help solve
+                    <br/><br />
+                    To inspire attendees to get involved in technology innovation at whatever level they are in
+                    <br /><br />
+                    To teach technological collaboration, If you cannot make it, reach out to someone who can and collaborate
+                    <br /><br />
+                    To form a network for free idea sharing
+                    <br /><br />
+                    To discuss and analyze next generation technology and inspire attendees to get involved in their development and deployment as the opportunities arise
+
+                </div>
+
+            </div>
+        </section>
+        <section id="objectives" class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="navy-line"></div>
+                    <h1>Sign Up</h1>
+                </div>
+            </div>
+            <div class="row features-block">
+                <div class="col-lg-8 col-lg-offset-2 text-left wow fadeInRight">
+                    @using (Html.BeginForm("Index", "Register", FormMethod.Post, new { autocomplete = "off", role = "form" }))
+                    {
+                        @Html.Partial("_validationSummary")
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.FullName)
+                            @Html.TextBoxFor(M => M.FullName, new { placeholder = "Full Name", @class = "form-control" })
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.EmailAddress)
+                            @Html.TextBoxFor(m => m.EmailAddress, new { placeholder = "Email Address", @class = "form-control" })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.PhoneNumber)
+                            @Html.TextBoxFor(m => m.PhoneNumber, new { placeholder = "Phone Number", @class = "form-control" })
+                        </div>
+
+
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Gender)
+                            @Html.DropDownListFor(m => m.Gender, ViewBag.Gender as IEnumerable<SelectListItem>, new { @class = "form-control" })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Institution)
+                            @Html.TextBoxFor(m => m.Institution, new { placeholder = "Institution Of Study", @class = "form-control" })
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.CourseOfStudy)
+                            @Html.TextBoxFor(m => m.CourseOfStudy, new { placeholder = "Course Of Study", @class = "form-control" })
+                        </div>
+
+
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.State)
+                            @Html.TextBoxFor(m => m.State, new { placeholder = "State", @class = "form-control" })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Country)
+                            @Html.TextBoxFor(m => m.Country, new { placeholder = "Country", @class = "form-control" })
+                        </div>
+                        
+                        <p class="button">
+                            <input type="submit" class="btn btn-primary" value="Sign up" />
+                        </p>
+                    }
+                </div>
+            </div>
+        </section>
+
+        @*<section id="team" class="gray-section team">
+            <div class="container">
+                <div class="row m-b-lg">
+                    <div class="col-lg-12 text-center">
+                        <div class="navy-line"></div>
+                        <h1>Speakers</h1>
+                        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 wow fadeInLeft">
+                        <div class="team-member">
+                            <img src="img/avatar3.jpg" class="img-responsive img-circle img-small" alt="">
+                            <h4><span class="navy">Amelia</span> Smith</h4>
+                            <p>Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam an soluta sensibus. </p>
+                            <ul class="list-inline social-icon">
+                                <li>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="team-member wow zoomIn">
+                            <img src="img/avatar1.jpg" class="img-responsive img-circle" alt="">
+                            <h4><span class="navy">John</span> Novak</h4>
+                            <p>Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam an soluta sensibus.</p>
+                            <ul class="list-inline social-icon">
+                                <li>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 wow fadeInRight">
+                        <div class="team-member">
+                            <img src="img/avatar2.jpg" class="img-responsive img-circle img-small" alt="">
+                            <h4><span class="navy">Peter</span> Johnson</h4>
+                            <p>Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam an soluta sensibus.</p>
+                            <ul class="list-inline social-icon">
+                                <li>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                    </div>
+                </div>
+            </div>
+        </section>*@
+
+        <section id="contact" class="gray-section contact">
+            <div class="container">
+                <div class="row m-b-lg">
+                    <div class="col-lg-12 text-center">
+                        <div class="navy-line"></div>
+                        <h1>Contact Us</h1>
+                        <p>We did like to hear from you, If you have any questions or want to know how you can be a part of the event</p>
+                    </div>
+                </div>
+                <div class="row m-b-lg">
+                    <div class="col-lg-3 col-lg-offset-3">
+                        <address>
+                           
+                            <abbr title="Phone"><i class="fa fa-phone"></i></abbr> (234) 8131050053
+                            <br/>
+                            <abbr title="Phone"><i class="fa fa-phone"></i></abbr> (234) 8144448377
+                            <br />
+                            <abbr title="Phone"><i class="fa fa-phone"></i></abbr> (234) 8110750790
+                        </address>
+                    </div>
+                    <div class="col-lg-4">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <a href="mailto:info@blwcampusministry.com" class="btn btn-primary">Send us an e-mail</a>
+                        <p class="m-t-sm">
+                            Or follow us on social platform
+                        </p>
+                        <ul class="list-inline social-icon">
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                        <p><strong>&copy; 2015 BLW Campus Ministry</strong><br /> No Part of this website should be reproduced without prior notice to the owners of the site.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="~/js/jquery-2.1.1.js"></script>
+        <script src="~/js/pace.min.js"></script>
+        <script src="~/js/bootstrap.min.js"></script>
+        <script src="~/js/classie.js"></script>
+        <script src="~/js/cbpAnimatedHeader.js"></script>
+        <script src="~/js/wow.min.js"></script>
+        <script src="~/js/inspinia.js"></script>
+    </body>
+</html>
+

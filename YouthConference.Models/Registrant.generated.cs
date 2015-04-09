@@ -140,6 +140,32 @@ namespace YouthConference.Models
 			}
 		}
 		
+		private string _courseOfStudy;
+		public virtual string CourseOfStudy
+		{
+			get
+			{
+				return this._courseOfStudy;
+			}
+			set
+			{
+				this._courseOfStudy = value;
+			}
+		}
+		
+		private string _country;
+		public virtual string Country
+		{
+			get
+			{
+				return this._country;
+			}
+			set
+			{
+				this._country = value;
+			}
+		}
+		
 	}
 }
 #pragma warning restore 1591
