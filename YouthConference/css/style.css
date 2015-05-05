@@ -65,7 +65,7 @@ h1 {
   padding: 15px 0;
 }
 .navbar-default {
-  background-color: transparent;
+  background-color: #777;
   border-color: transparent;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -154,7 +154,8 @@ h1 {
 -------------------------------------------------- */
 /* Carousel base class */
 .carousel {
-  height: 470px;
+    margin-top: 60px;
+    height: 470px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -162,8 +163,9 @@ h1 {
 }
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 470px;
+  height: 570px;
   background-color: #777;
+    margin-bottom: 100px;
 }
 .carousel-inner > .item > img {
   position: absolute;
@@ -201,10 +203,13 @@ h1 {
   width: 6%;
 }
 .carousel-inner .container {
+    background-color: whitesmoke;
+    width: auto;
+    height: auto;
   position: relative;
 }
 .carousel-inner {
-  overflow: visible;
+  overflow: hidden;
 }
 .carousel-caption {
   position: absolute;
@@ -267,7 +272,7 @@ h1 {
   text-transform: uppercase;
 }
 .features-block {
-  margin-top: 40px;
+  margin-top: 200px;
 }
 .features-text {
   margin-top: 40px;
